@@ -1,0 +1,45 @@
+
+
+<html>
+
+
+<head>
+    <title>
+        todo list
+    </title>
+    
+</head>
+
+
+<body>
+
+
+<input type="text" id ="todoapp" placeholder="enter to do list">
+
+<button type="button" onclick="enter"></button>
+<p>thisis the table</p>
+<table id="output">
+    <thead><td>Name</td></thead>
+    <tbody></tbody>
+</table>
+
+
+<script type="text/javascript">
+
+  function enter(){
+
+    var inputname=document.getElementById("todoapp");
+    var output=document.getElementById("output");
+      output.innerHTML +="<tr><td>"+inputname.value+"</td></tr>"
+
+
+  }
+
+     
+
+</script>
+
+
+</body>
+
+</html>
